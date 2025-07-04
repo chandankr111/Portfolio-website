@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun, Github, Linkedin, Mail } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
 
   const navLinks = [
     { href: '#about', label: 'About' },
-    { href: '#experience', label: 'Education' },
+    // { href: '#experience', label: 'Education' },
     { href: '#projects', label: 'Projects' },
     { href: '#contact', label: 'Contact' },
   ];
@@ -44,6 +45,14 @@ const Navbar = () => {
             <Link href="/" className="text-xl font-bold">
               Chandan Kumar
             </Link>
+            <motion.p 
+              className="text-sm md:text-base text-muted-foreground"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+            >
+              Software Engineer
+            </motion.p>
           </div>
           
           <div className="hidden md:flex space-x-6">

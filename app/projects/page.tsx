@@ -59,14 +59,7 @@ const allProjects = [
   }
 ];
 
-const skills = [
-  "Next.js", "React", "Node.js", "Express", "MongoDB", "PostgreSQL",
-  "Python", "FastAPI", "Docker", "AWS", "Kubernetes", "Terraform",
-  "GitHub Actions", "TypeScript", "CI/CD", "Redis", "Flask", "Socket.io",
-  "Stripe", "OpenCV", "PyTorch", "TensorFlow", "Vue.js"
-];
-
-const ProjectCard = ({ project, index }) => {
+const ProjectCard = ({ project, index }: { project: typeof allProjects[0]; index: number }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -75,8 +68,8 @@ const ProjectCard = ({ project, index }) => {
       viewport={{ once: true }}
       className="h-full"
     >
-      <Card className="h-full flex flex-col overflow-hidden group shadow-lg rounded-xl">
-        <div className="relative h-40 overflow-hidden">
+      <Card className="h-full flex flex-col overflow-hidden group shadow-lg rounded-xl min-h-[400px]">
+        <div className="relative h-52 overflow-hidden">
           <Image
             src={project.image}
             alt={project.title}
@@ -124,48 +117,22 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="space-y-10"
+        className="space-y-10 max-w-7xl mx-auto px-4"
       >
         {/* Section Heading */}
-        <div className="space-y-2">
-          <h2 className="text-3xl font-bold">Projects</h2>
-          <div className="h-1 w-20 bg-primary/30 rounded-full"></div>
+        <div className="text-center space-y-2">
+         
         </div>
 
-        {/* Grid Layout: 3/4 projects + 1/4 skills */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          {/* Projects 3/4 */}
-          <div className="md:col-span-3 space-y-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {allProjects.map((project, index) => (
-                <ProjectCard key={index} project={project} index={index} />
-              ))}
-            </div>
-
-            {/* View All Button BELOW project cards */}
-            <div className="flex justify-center pt-2">
-              <Link href="/projects">
-                <Button size="lg" variant="outline" className="gap-2">
-                  View All Projects <ExternalLink className="h-4 w-4" />
-                </Button>
-              </Link>
-            </div>
-          </div>
-
-          {/* Skills 1/4 */}
-          <div className="md:col-span-1">
-            <div className="sticky top-20 space-y-4">
-              <h3 className="text-xl font-semibold">Skills</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill, index) => (
-                  <Badge key={index} variant="secondary" className="text-xs px-2 py-1">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-          </div>
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {allProjects.map((project, index) => (
+            <ProjectCard key={index} project={project} index={index} />
+          ))}
         </div>
+
+        {/* View All Projects Button */}
+       
       </motion.div>
     </section>
   );

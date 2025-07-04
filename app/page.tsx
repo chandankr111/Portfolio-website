@@ -7,13 +7,13 @@ import LatestWork from '@/components/sections/latest-work';
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-20 py-16">
-      <Hero />
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-0 py-16">
+      {/* <Hero /> */}
       <About />
-      <Experience />
+      {/* <Experience /> */}
       <Projects />
-      <LatestWork />
-      <Contact />
+      {/* <LatestWork /> */}
+      {/* <Contact /> */}
     </div>
   );
 }
