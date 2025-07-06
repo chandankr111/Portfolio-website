@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,7 @@ import Link from "next/link";
 
 const allProjects = [
   {
+    type: "ml",
     title: "Sentiment Analysis API",
     description: "BERT model for analyzing customer sentiments accurately.",
     image: "https://images.pexels.com/photos/590037/pexels-photo-590037.jpeg",
@@ -18,6 +20,7 @@ const allProjects = [
     technologies: ["PyTorch", "FastAPI", "Hugging Face", "Docker", "React"]
   },
   {
+    type: "ml",
     title: "Computer Vision Detector",
     description: "YOLOv5 based detector with real-time custom training.",
     image: "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg",
@@ -26,6 +29,7 @@ const allProjects = [
     technologies: ["TensorFlow", "OpenCV", "Flask", "JavaScript"]
   },
   {
+    type: "ml",
     title: "NLP Document Classifier",
     description: "System to auto-classify legal docs using NLP pipelines.",
     image: "https://images.pexels.com/photos/1181279/pexels-photo-1181279.jpeg",
@@ -34,6 +38,7 @@ const allProjects = [
     technologies: ["SpaCy", "NLTK", "scikit-learn", "MongoDB"]
   },
   {
+    type: "fullstack",
     title: "E-Commerce Platform",
     description: "Inventory, payments, analytics—all in one e-com dashboard.",
     image: "https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg",
@@ -42,6 +47,7 @@ const allProjects = [
     technologies: ["Next.js", "Node.js", "MongoDB", "Stripe"]
   },
   {
+    type: "fullstack",
     title: "Task Management App",
     description: "Kanban + real-time collaboration + role-based control.",
     image: "https://images.pexels.com/photos/7148384/pexels-photo-7148384.jpeg",
@@ -50,6 +56,7 @@ const allProjects = [
     technologies: ["React", "Express", "PostgreSQL", "Socket.io"]
   },
   {
+    type: "fullstack",
     title: "Cloud CI/CD Platform",
     description: "Infrastructure as Code + Monitoring + One-click deploy.",
     image: "https://images.pexels.com/photos/1476321/pexels-photo-1476321.jpeg",
@@ -110,8 +117,11 @@ const ProjectCard = ({ project, index }: { project: typeof allProjects[0]; index
 };
 
 const Projects = () => {
+  const [filter, setFilter] = useState("fullstack");
+  const filteredProjects = allProjects.filter(project => project.type === filter);
+
   return (
-    <section id="projects" className="py-10 scroll-mt-20">
+    <section id="projects" className="py-20 scroll-mt-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -119,20 +129,20 @@ const Projects = () => {
         viewport={{ once: true }}
         className="space-y-10 max-w-7xl mx-auto px-4"
       >
-        {/* Section Heading */}
-        <div className="text-center space-y-2">
-         
+        {/* Filter Buttons */}
+        <div className="flex flex-wrap justify-center gap-4">
+          <Button variant={filter === "fullstack" ? "default" : "outline"} onClick={() => setFilter("fullstack")}>Full Stack & DevOps</Button>
+          <Button variant={filter === "ml" ? "default" : "outline"} onClick={() => setFilter("ml")}>ML / AI</Button>
         </div>
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {allProjects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
           ))}
         </div>
 
-        {/* View All Projects Button */}
-       
+      
       </motion.div>
     </section>
   );

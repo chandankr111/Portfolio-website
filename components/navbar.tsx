@@ -2,10 +2,12 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Menu, X, Moon, Sun, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Moon, Sun, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import XIcon from '@/components/icon/icon';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,10 +29,10 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
-    { href: '#about', label: 'About' },
+    { href: '/', label: 'About' },
     // { href: '#experience', label: 'Education' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/projects', label: 'Projects' },
+    // { href: '#contact', label: 'Contact' },
   ];
 
   return (
@@ -68,12 +70,20 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
+          {/* <a href="https://x.com/chandan89531144" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+  <XIcon className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
+</a> */}
+
+
             <a href="https://github.com/chandankr111" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
             </a>
             <a href="https://www.linkedin.com/in/chandan-kumar-55023524b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
             </a>
+            <a href="https://x.com/chandan89531144" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+  <XIcon className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
+</a>
             <a href="mailto:kr38.chandan@gmail.com" aria-label="Email">
               <Mail className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
             </a>
