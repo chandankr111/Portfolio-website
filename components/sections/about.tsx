@@ -85,31 +85,31 @@ const About = () => {
                 <h3 className="text-lg font-semibold mb-3">Certifications</h3>
                 <div className="max-h-48 overflow-y-auto pr-2 space-y-4">
                   <div>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                    <a href="https://www.credly.com/badges/58c356c8-e563-4b70-a876-09b22c05f1d9/linked_in_profile" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
                       AWS Cloud Practitioner
                     </a>
                     <p className="text-sm text-muted-foreground">Amazon Web Services</p>
                   </div>
-                  <div>
+                  {/* <div>
                     <a href="#" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                      Full Stack Development and DevOps
+                    </a>
+                    <p className="text-sm text-muted-foreground">100xDevs by Harkirat Singh</p>
+                  </div> */}
+                  {/* <div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                      Full Stack Development and DevOps
+                    </a>
+                    <p className="text-sm text-muted-foreground">100xDevs by Harkirat Singh</p>
+                  </div> */}
+                  <div>
+                    <a href="https://www.linkedin.com/in/chandan-kumar-55023524b/details/certifications/1732675100106/single-media-viewer?type=IMAGE&profileId=ACoAAD3K38wBhPZoSNyF09iV2rCh9IyFd1qllVw&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BA3z2Xm6vSMSlzvjqLXRikA%3D%3D" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
                       Full Stack Development and DevOps
                     </a>
                     <p className="text-sm text-muted-foreground">100xDevs by Harkirat Singh</p>
                   </div>
                   <div>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
-                      Full Stack Development and DevOps
-                    </a>
-                    <p className="text-sm text-muted-foreground">100xDevs by Harkirat Singh</p>
-                  </div>
-                  <div>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
-                      Full Stack Development and DevOps
-                    </a>
-                    <p className="text-sm text-muted-foreground">100xDevs by Harkirat Singh</p>
-                  </div>
-                  <div>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                    <a href="https://courses.cognitiveclass.ai/certificates/0f16e80e8030474d9f43bb8c0870d5fc" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
                       Python for Data Science
                     </a>
                     <p className="text-sm text-muted-foreground">IBM</p>

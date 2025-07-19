@@ -5,68 +5,122 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Popover, PopoverTrigger, PopoverContent } from "@/components/ui/popover";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const allProjects = [
   {
-    type: "ml",
-    title: "Sentiment Analysis API",
-    description: "BERT model for analyzing customer sentiments accurately.",
-    image: "https://images.pexels.com/photos/590037/pexels-photo-590037.jpeg",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["PyTorch", "FastAPI", "Hugging Face", "Docker", "React"]
+    type: "fullstack",
+    title: "Exchange-project",
+    description: "Built a scalable Exchange Trading App with real-time orderbooks, in-memory matching engine, WebSocket-based data streams, and TimescaleDB-backed time-series persistence. Designed using a microservices architecture with Redis for messaging and Next.js for frontend.",
+    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/Screenshot%202025-05-21%20231752.png",
+    liveUrl: "https://youtu.be/7fwSKeKwXTI",
+    githubUrl: "https://github.com/chandankr111/Exchange-Final-project",
+    technologies: ["Next.js", "Node.js", "Redis", "WebSockets", "Microservices"]
   },
+
   {
-    type: "ml",
-    title: "Computer Vision Detector",
-    description: "YOLOv5 based detector with real-time custom training.",
-    image: "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["TensorFlow", "OpenCV", "Flask", "JavaScript"]
-  },
-  {
-    type: "ml",
-    title: "NLP Document Classifier",
-    description: "System to auto-classify legal docs using NLP pipelines.",
-    image: "https://images.pexels.com/photos/1181279/pexels-photo-1181279.jpeg",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["SpaCy", "NLTK", "scikit-learn", "MongoDB"]
+    type: "fullstack",
+    title: "Automation-Project",
+    description: "Developed a no-code automation platform to create trigger-based workflows, using Kafka, Redis, and PostgreSQL for real-time event processing and Dockerized deployment.",
+    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/Screenshot%202025-07-19%20153607.png",
+    liveUrl: "https://youtu.be/PT17EJ6hyK4",
+    githubUrl: "https://github.com/chandankr111/Automation-Platform.git",
+    technologies: [
+      "Next.js", "Node.js", "Express", "JWT", "Kafka",
+      "PostgreSQL", "Prisma", "Docker", "TypeScript",
+      "Tailwind CSS", "Webhooks", 
+    ]
+    
   },
   {
     type: "fullstack",
-    title: "E-Commerce Platform",
-    description: "Inventory, payments, analytics—all in one e-com dashboard.",
-    image: "https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Next.js", "Node.js", "MongoDB", "Stripe"]
+    title: "Deployment Application",
+    description: `Built a full-stack deployment platform inspired by Vercel that enables users to deploy GitHub repositories with real-time status tracking, automated builds, and static hosting via Cloudflare R2. It features Redis for live deployment state management and Dockerized infrastructure for ease of development.`, 
+    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/Screenshot%202025-07-19%20160450.png",
+    liveUrl: "https://youtu.be/lGC6XQhYClM",
+    githubUrl: "https://github.com/chandankr111/Deployment-application.git",
+    technologies: [
+      "Next.js", "Node.js", "Express", "Docker", "Redis",
+      "Cloudflare R2", "TypeScript", "Tailwind CSS",
+      "GitHub API", "Vite", "Webhooks"
+    ]
+  }
+  
+  ,
+  
+  {
+    type: "fullstack",
+    title: "Netflix-clone Deploy on AWS",
+    description: "Its complete DEV + SEC + OPS project deploy on netflix",
+    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/Screenshot 2025-06-20 181024.png",
+    liveUrl: "https://www.linkedin.com/posts/chandan-kumar-55023524b_aws-eks-kubernetes-activity-7342199743327997952-tgPm",
+    githubUrl: "https://github.com/chandankr111/DevSecOps-Project-netflix",
+    technologies: [
+      "Kubernetes", "AWS", "Docker", "Jenkins", "SonarQube", "Trivy", "Prometheus", "Grafana",
+      "EKS", "Helm", "ArgoCD", "GitHub Actions"
+    ]
   },
   {
     type: "fullstack",
-    title: "Task Management App",
-    description: "Kanban + real-time collaboration + role-based control.",
-    image: "https://images.pexels.com/photos/7148384/pexels-photo-7148384.jpeg",
+    title: "DevSecOps Pipeline for 0-X game",
+    description: "Implemented a complete DevSecOps pipeline for a React-based Tic Tac Toe game with real-time game state, score tracking, and responsive UI. The CI/CD pipeline integrates GitHub Actions, Trivy, Docker, and Argo CD with GitOps practices to ensure secure and automated deployments on Kubernetes. Includes vulnerability scanning, containerization, and secrets management for production-grade delivery.",
+   
+    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/1748607674446.jpeg",
+    liveUrl: "https://www.linkedin.com/posts/chandan-kumar-55023524b_devsecops-ci_cd-kubernetes-activity-7342199743327997952-tgPm",
+    githubUrl: "https://github.com/chandankr111/devsecops-demo",
+    technologies: [
+      "GitHub Actions", "Docker", "Trivy", "GHCR", "Kubernetes", "ArgoCD",
+      "React", "TypeScript", "Tailwind CSS"
+    ]
+  }
+  ,
+  
+
+  {
+    type: "ml",
+    title: "Crypto-Metrics-Analyzer",
+    description: "Built a Bitcoin price prediction model using Gradient Boosting and other ML algorithms, achieving low MAE scores through advanced tuning, feature engineering, and data visualization.",
+
+    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/download.jpg",
     liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["React", "Express", "PostgreSQL", "Socket.io"]
+    githubUrl: "https://github.com/chandankr111/Crypto-Metrics-Analyzer.git",
+    technologies: ["Python", "Scikit-learn", "Gradient Boosting", "Random Forest", "Linear Regression", "Decision Tree", "GridSearchCV", "Pandas", "Matplotlib", "Seaborn"]
+  
   },
   {
-    type: "fullstack",
-    title: "Cloud CI/CD Platform",
-    description: "Infrastructure as Code + Monitoring + One-click deploy.",
-    image: "https://images.pexels.com/photos/1476321/pexels-photo-1476321.jpeg",
+    type: "ml",
+    title: "Image-Segmentation",
+    description: "Implemented an image segmentation model using U-Net with EfficientNet-B0 encoder, optimized with Dice Loss and BCEWithLogitsLoss using PyTorch and SMP.",
+
+    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/Image-SEgmentation.png",
     liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Kubernetes", "Terraform", "AWS", "Go", "Vue.js"]
+    githubUrl: "https://github.com/chandankr111/Image_Segmentation",
+    technologies: [
+      "Python", "PyTorch", "U-Net", "EfficientNet-B0", "ImageNet", "Segmentation Models PyTorch",
+      "OpenCV", "Dice Loss", "BCEWithLogitsLoss", "Adam Optimizer"
+    ]
+  },
+  {
+    type: "ml",
+    title: "Diabetes-prediction",
+    description: "Built a logistic regression model to predict diabetes using health metrics like glucose and BMI, with EDA, preprocessing, and evaluation via precision-recall and confusion matrix.",
+
+    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/diabetes.jpg",
+    liveUrl: "#",
+    githubUrl: "https://github.com/chandankr111/Diabetes_pridiction.git",
+    technologies: [
+      "Python", "Logistic Regression", "Pandas", "NumPy", "Matplotlib", "Seaborn",
+      "Scikit-learn", "EDA", "Normalization", "Confusion Matrix", "Precision-Recall"
+    ]
   }
 ];
 
 const ProjectCard = ({ project, index }: { project: typeof allProjects[0]; index: number }) => {
+  const [popoverOpen, setPopoverOpen] = useState(false);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -83,19 +137,38 @@ const ProjectCard = ({ project, index }: { project: typeof allProjects[0]; index
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
         </div>
         <CardContent className="flex-grow pt-4 pb-2 px-4">
           <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
           <p className="text-muted-foreground text-sm mb-3">{project.description}</p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 items-center">
             {project.technologies.slice(0, 3).map((tech, i) => (
               <Badge key={i} variant="outline" className="text-xs px-2 py-1">{tech}</Badge>
             ))}
             {project.technologies.length > 3 && (
-              <Badge variant="outline" className="text-xs px-2 py-1">
-                +{project.technologies.length - 3}
-              </Badge>
+              <Popover open={popoverOpen} onOpenChange={setPopoverOpen}>
+                <PopoverTrigger asChild>
+                  <button
+                    className="text-xs px-2 py-1 border rounded-md border-muted-foreground text-muted-foreground hover:bg-muted cursor-pointer"
+                    onMouseEnter={() => setPopoverOpen(true)}
+                    onMouseLeave={() => setPopoverOpen(false)}
+                  >
+                    +{project.technologies.length - 3}
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent
+                  className="w-auto max-w-xs max-h-40 overflow-y-auto flex flex-wrap gap-2 z-50 p-3 animate-in fade-in zoom-in-95"
+                  onMouseEnter={() => setPopoverOpen(true)}
+                  onMouseLeave={() => setPopoverOpen(false)}
+                >
+                  {project.technologies.slice(3).map((tech, i) => (
+                    <Badge key={i} variant="secondary" className="text-xs px-2 py-1">
+                      {tech}
+                    </Badge>
+                  ))}
+                </PopoverContent>
+              </Popover>
             )}
           </div>
         </CardContent>
@@ -129,20 +202,16 @@ const Projects = () => {
         viewport={{ once: true }}
         className="space-y-10 max-w-7xl mx-auto px-4"
       >
-        {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-4">
           <Button variant={filter === "fullstack" ? "default" : "outline"} onClick={() => setFilter("fullstack")}>Full Stack & DevOps</Button>
           <Button variant={filter === "ml" ? "default" : "outline"} onClick={() => setFilter("ml")}>ML / AI</Button>
         </div>
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
           ))}
         </div>
-
-      
       </motion.div>
     </section>
   );

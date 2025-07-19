@@ -29,7 +29,7 @@ const allProjects = [
   {
     type: "fullstack",
     title: "Exchange-project",
-    description: "It is a Exchange Trading Application",
+    description: "Built a scalable Exchange Trading App with real-time orderbooks, in-memory matching engine, WebSocket-based data streams, and TimescaleDB-backed time-series persistence. Designed using a microservices architecture with Redis for messaging and Next.js for frontend.",
     image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/Screenshot%202025-05-21%20231752.png",
     liveUrl: "https://youtu.be/7fwSKeKwXTI",
     githubUrl: "https://github.com/chandankr111/Exchange-Final-project",
@@ -38,12 +38,18 @@ const allProjects = [
   {
     type: "fullstack",
     title: "Automation-Project",
-    description: "It Automate your workflow",
-    image: "",
-    liveUrl: "#",
-    githubUrl: "https://github.com/chandankr111/Automation-application.git",
-    technologies: ["React", "Express", "PostgreSQL", "Docker", "Redis"]
+    description: "Developed a no-code automation platform to create trigger-based workflows, using Kafka, Redis, and PostgreSQL for real-time event processing and Dockerized deployment.",
+    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/Screenshot%202025-07-19%20153607.png",
+    liveUrl: "https://youtu.be/PT17EJ6hyK4",
+    githubUrl: "https://github.com/chandankr111/Automation-Platform.git",
+    technologies: [
+      "Next.js", "Node.js", "Express", "JWT", "Kafka",
+      "PostgreSQL", "Prisma", "Docker", "TypeScript",
+      "Tailwind CSS", "Webhooks", 
+    ]
+    
   },
+
   {
     type: "fullstack",
     title: "Netflix-clone Deploy on AWS",
@@ -56,6 +62,19 @@ const allProjects = [
       "EKS", "Helm", "ArgoCD", "GitHub Actions"
     ]
   },
+  // {
+  //   type: "fullstack",
+  //   title: "Deployment Application",
+  //   description: "Built a full-stack deployment platform inspired by Vercel that enables users to deploy GitHub repositories with real-time status tracking, automated builds, and static hosting via Cloudflare R2. It features Redis for live deployment state management and Dockerized infrastructure for ease of development.",
+  //   image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/Screenshot%202025-07-19%20160450.png",
+  //   liveUrl: "https://youtu.be/lGC6XQhYClM",
+  //   githubUrl: "https://github.com/chandankr111/Deployment-application.git",
+  //   technologies: [
+  //     "Next.js", "Node.js", "Express", "Docker", "Redis",
+  //     "Cloudflare R2", "TypeScript", "Tailwind CSS",
+  //     "GitHub API", "Vite", "Webhooks"
+  //   ]
+  // },
   {
     type: "ml",
     title: "Crypto-Metrics-Analyzer",
@@ -95,20 +114,23 @@ const allProjects = [
   }
 ];
 
+const programmingSkills = [
+  "C++", "Python", "Data Structures", "Algorithms", "Competitive Programming"
+];
+
 const fullstackSkills = [
   "Next.js", "React", "Node.js", "Express", "MongoDB", "PostgreSQL",
-  "FastAPI", "Flask", "TypeScript", "JavaScript", "Redis", "Redis Pub/Sub",
+  "FastAPI", "TypeScript", "JavaScript",  "Redis" , "Pub/Sub",
   "Kafka", "WebSockets", "WebRTC", "Docker", "Kubernetes", "AWS", "CI/CD",
-  "GitHub Actions", "Jenkins", "SonarQube", "Terraform", "Stripe", "Socket.io",
-  "Vue.js", "System Design", "Infrastructure as Code", "Prometheus", "Grafana"
+   "System Design"
 ];
 
 const mlSkills = [
-  "Python", "C", "C++",
+  "Python", "Machine Learning", "Deep Learning",  "Image Processing", "NLP",
   "PyTorch", "TensorFlow", "scikit-learn", "OpenCV", "Pandas", "NumPy", "Matplotlib",
-  "Seaborn", "Langchain", "SpaCy", "NLTK",
-  "Power BI", "Google Sheets", "Data Structures & Algorithms",
-  "Machine Learning", "Deep Learning", "Image Processing", "NLP", "Computer Vision"
+  "Seaborn", "Langchain", 
+  "Power BI",  "Data Structures & Algorithms",
+ 
 ];
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
@@ -216,24 +238,41 @@ const Projects = () => {
 
           <div className="md:col-span-1">
             <div className="sticky top-20 space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Full Stack & DevOps</h3>
-                <div className="flex flex-wrap gap-2">
-                  {fullstackSkills.map((skill, index) => (
-                    <Badge key={index} variant="secondary" className="text-xs px-2 py-1">
-                      {skill}
-                    </Badge>
-                  ))}
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Programming & CP</h3>
+                  <div className="flex flex-wrap gap-2 mb-2">
+                    {programmingSkills.map((skill, index) => (
+                      <Badge key={index} variant="secondary" className="text-xs px-2 py-1">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                  <Button variant="outline" size="sm" asChild className="w-full">
+                    <a href="https://leetcode.com/chandankr111/" target="_blank" rel="noopener noreferrer" className="gap-1">
+                      Visit LeetCode <ExternalLink className="h-4 w-4" />
+                    </a>
+                  </Button>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">ML / AI</h3>
-                <div className="flex flex-wrap gap-2">
-                  {mlSkills.map((skill, index) => (
-                    <Badge key={index} variant="secondary" className="text-xs px-2 py-1">
-                      {skill}
-                    </Badge>
-                  ))}
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Full Stack & DevOps</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {fullstackSkills.map((skill, index) => (
+                      <Badge key={index} variant="secondary" className="text-xs px-2 py-1">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">ML / AI</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {mlSkills.map((skill, index) => (
+                      <Badge key={index} variant="secondary" className="text-xs px-2 py-1">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -245,3 +284,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
