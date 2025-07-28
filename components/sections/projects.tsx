@@ -249,7 +249,7 @@ const Projects = () => {
                     ))}
                   </div>
                   <Button variant="outline" size="sm" asChild className="w-full">
-                    <a href="https://leetcode.com/chandankr111/" target="_blank" rel="noopener noreferrer" className="gap-1">
+                    <a href="https://leetcode.com/u/chandankr824142/" target="_blank" rel="noopener noreferrer" className="gap-1">
                       Visit LeetCode <ExternalLink className="h-4 w-4" />
                     </a>
                   </Button>
