@@ -53,7 +53,7 @@ const allProjects = [
   {
     type: "fullstack",
     title: "Netflix-clone Deploy on AWS",
-    description: "Its complete DEV + SEC + OPS project deploy on netflix",
+    description: "Its complete DEV + SEC + OPS project deploy on AWS",
     image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/Screenshot 2025-06-20 181024.png",
     liveUrl: "https://www.linkedin.com/posts/chandan-kumar-55023524b_aws-eks-kubernetes-activity-7342199743327997952-tgPm",
     githubUrl: "https://github.com/chandankr111/DevSecOps-Project-netflix",
@@ -75,6 +75,7 @@ const allProjects = [
   //     "GitHub API", "Vite", "Webhooks"
   //   ]
   // },
+
   {
     type: "ml",
     title: "Crypto-Metrics-Analyzer",
@@ -120,13 +121,13 @@ const programmingSkills = [
 
 const fullstackSkills = [
   "Next.js", "React", "Node.js", "Express", "MongoDB", "PostgreSQL",
-  "FastAPI", "TypeScript", "JavaScript",  "Redis" , "Pub/Sub",
+  "RestAPI", "grpc"  , "rpc" ,  "TypeScript", "JavaScript",  "Redis" , "Pub/Sub",
   "Kafka", "WebSockets", "WebRTC", "Docker", "Kubernetes", "AWS", "CI/CD",
    "System Design"
 ];
 
 const mlSkills = [
-  "Python", "Machine Learning", "Deep Learning",  "Image Processing", "NLP",
+  "Python", "Machine Learning", "Deep Learning",  "Image Processing", 
   "PyTorch", "TensorFlow", "scikit-learn", "OpenCV", "Pandas", "NumPy", "Matplotlib",
   "Seaborn", "Langchain", 
   "Power BI",  "Data Structures & Algorithms",

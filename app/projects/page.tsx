@@ -54,7 +54,7 @@ const allProjects = [
   {
     type: "fullstack",
     title: "Netflix-clone Deploy on AWS",
-    description: "Its complete DEV + SEC + OPS project deploy on netflix",
+    description: "Its complete DEV + SEC + OPS project deploy on AWS",
     image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/Screenshot 2025-06-20 181024.png",
     liveUrl: "https://www.linkedin.com/posts/chandan-kumar-55023524b_aws-eks-kubernetes-activity-7342199743327997952-tgPm",
     githubUrl: "https://github.com/chandankr111/DevSecOps-Project-netflix",
@@ -62,22 +62,120 @@ const allProjects = [
       "Kubernetes", "AWS", "Docker", "Jenkins", "SonarQube", "Trivy", "Prometheus", "Grafana",
       "EKS", "Helm", "ArgoCD", "GitHub Actions"
     ]
+      },
+      {
+        type: "fullstack",
+        title: "DevSecOps Pipeline for 0-X game",
+        description: "Implemented a complete DevSecOps pipeline for a React-based Tic Tac Toe game with real-time game state, score tracking, and responsive UI. The CI/CD pipeline integrates GitHub Actions, Trivy, Docker, and Argo CD with GitOps practices to ensure secure and automated deployments on Kubernetes. Includes vulnerability scanning, containerization, and secrets management for production-grade delivery.",
+      
+        image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/1748607674446.jpeg",
+        liveUrl: "https://www.linkedin.com/posts/chandan-kumar-55023524b_devsecops-ci_cd-kubernetes-activity-7342199743327997952-tgPm",
+        githubUrl: "https://github.com/chandankr111/devsecops-demo",
+        technologies: [
+          "GitHub Actions", "Docker", "Trivy", "GHCR", "Kubernetes", "ArgoCD",
+          "React", "TypeScript", "Tailwind CSS"
+        ]
+      }
+      ,
+      {
+        type: "fullstack",
+        title: "NetBanking-app",
+        description: "Build a NetBanking app where user can do transaction and see the history of transaction.",
+        image: "#",
+        liveUrl: "#",
+        githubUrl: "https://github.com/chandankr111/Net-banking--app.git",
+        technologies: [
+          "Next.js",
+          "React.js",
+          "TypeScript",
+          "Node.js",
+          "Express",
+          "Tailwind CSS",
+          "PostgreSQL",
+          "Prisma ORM",
+          "Turborepo",
+          "Docker",
+          "JWT"
+        ]
+      },
+  {
+    type: "fullstack",
+    title: "Blog-live",
+    description: "Developed a dynamic blogging platform allowing users to share stories, create posts, and interact with the community. Implemented a modular architecture with a custom NPM package for seamless frontend-backend integration. Backend deployed on Cloudflare.",
+    image: "",
+    liveUrl: "https://blog-git-main-chandan-kumars-projects-f7f9d157.vercel.app/signup",
+    githubUrl: "https://github.com/chandankr111/blog-live.git",
+    "technologies": [
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "HONO",
+      "Zod",
+      "Tailwind CSS",
+      "PostgreSQL (Neon Cloud)",
+      "Prisma ORM",
+      "Cloudflare",
+      
+    ]
   },
   {
     type: "fullstack",
-    title: "DevSecOps Pipeline for 0-X game",
-    description: "Implemented a complete DevSecOps pipeline for a React-based Tic Tac Toe game with real-time game state, score tracking, and responsive UI. The CI/CD pipeline integrates GitHub Actions, Trivy, Docker, and Argo CD with GitOps practices to ensure secure and automated deployments on Kubernetes. Includes vulnerability scanning, containerization, and secrets management for production-grade delivery.",
-   
-    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/1748607674446.jpeg",
-    liveUrl: "https://www.linkedin.com/posts/chandan-kumar-55023524b_devsecops-ci_cd-kubernetes-activity-7342199743327997952-tgPm",
-    githubUrl: "https://github.com/chandankr111/devsecops-demo",
-    technologies: [
-      "GitHub Actions", "Docker", "Trivy", "GHCR", "Kubernetes", "ArgoCD",
-      "React", "TypeScript", "Tailwind CSS"
-    ]
-  }
-  ,
+    title: "Image-Generation-Model",
+    description: "Built a backend of image generation model where user can trend any image and get the result in the form of image",
+    image: "#",
+    liveUrl: "#",
+    githubUrl: "https://github.com/chandankr111/Image-Generation-Model.git",
+    technologies: [ " Turbo", "Next.js", "TypeScript", "React", "Node.js", "Express", "Cloudflare", "R2-Bucket" , "Fal-AI API"]
+  },
+  {
+    type: "fullstack",
+    title: "Video-conference-app",
+    description: "Build a video confernece app where user can join meeting in same room.",
+    image: "#",
+    liveUrl: "#",
+    githubUrl: "https://github.com/chandankr111/Video-Conferencing-app.git",
+    technologies: [ "React.js", "TypeScript", "Node.js", "Express", "WebRTC", "Socket.io", "WebSockets"]
+  },
+  {
+    type: "fullstack",
+    title: "Scalable-chat-app",
+    description: "Implement a scalable backend for chat app",
+    image: "#",
+    liveUrl: "#",
+    githubUrl: "https://github.com/chandankr111/Scalable-chat-app.git",
+    technologies: [ "Bun", "TypeScript", "Node.js", "Express", "WebSockets"]
+  },
+  {
+    type: "fullstack",
+    title: "Simple gRpc-Implementation",
+    description: "Implement a simple gRpc-Implementation",
+    image: "#",
+    liveUrl: "#",
+    githubUrl: "https://github.com/chandankr111/gRPC-implementation.git",
+    technologies: [ "gRPC", "protobuf", "Bun" ,  "TypeScript", "Node.js", "Express"]
+  },
+  {
+    type: "fullstack",
+    title: "Simple pub-sub sensor-data-broadcasting-application",
+    description: "Implement a PUB-SUB microservices to sensor-data-broadcasting-application",
+    image: "#",
+    liveUrl: "#",
+    githubUrl: "https://github.com/chandankr111/sensor-data-broadcasting--implementing-using-redis-pubsub---backend-.git",
+    technologies: [ "redis pub-sub" , "docker" , "TypeScript", "Node.js", "Express"]
+  },
+
   
+
+
+  {
+    type: "fullstack",
+    title: "Simple rpc-Implementation",
+    description: "Implement a simple rpc-Implementation",
+    image: "#",
+    liveUrl: "#",
+    githubUrl: "https://github.com/chandankr111/RPC-simple-implementation.git",
+    technologies: [ "TypeScript", "Node.js", "Express", "WebSockets"]
+  },
 
   {
     type: "ml",
@@ -116,6 +214,7 @@ const allProjects = [
       "Scikit-learn", "EDA", "Normalization", "Confusion Matrix", "Precision-Recall"
     ]
   }
+
 ];
 
 const ProjectCard = ({ project, index }: { project: typeof allProjects[0]; index: number }) => {
