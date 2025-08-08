@@ -121,7 +121,7 @@ const allProjects = [
   {
     type: "fullstack",
     title: "Image-Generation-Model",
-    description: "Built a backend of image generation model where user can trend any image and get the result in the form of image",
+    description: "Developed the backend for an image generation system that allows users to train the model with custom images and generate outputs based on those. The system also supports text-to-image generation.",
     image: "#",
     liveUrl: "#",
     githubUrl: "https://github.com/chandankr111/Image-Generation-Model.git",
