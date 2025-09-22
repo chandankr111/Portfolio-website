@@ -137,7 +137,7 @@ const allProjects = [
 ];
 
 const programmingSkills = [
-  "C++", "Python","JavaScript","SQL", "Data Structures & Algorithms","Competitive Programming"
+  "C++", "Python","JavaScript","SQL"
 ];
 
 const fullstackSkills = [
@@ -260,7 +260,7 @@ const Projects = () => {
             <div className="sticky top-20 space-y-6">
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Programming & CP</h3>
+                  <h3 className="text-xl font-semibold mb-2">Programming</h3>
                   <div className="flex flex-wrap gap-2 mb-2">
                     {programmingSkills.map((skill, index) => (
                       <Badge key={index} variant="secondary" className="text-xs px-2 py-1">
