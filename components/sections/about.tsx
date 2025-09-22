@@ -55,9 +55,9 @@ const About = () => {
                 </p>
                 <p className="text-base leading-relaxed">
                 I have hands-on experience in Machine Learning and AI, having completed coursework in ML, Deep Learning, and Image Processing. I’ve built projects in Deep Learning, Machine Learning, and classification using frameworks like PyTorch, TensorFlow, and Scikit-learn, often deploying them with FastAPI.                </p>
-                <p className="text-base leading-relaxed">
+                {/* <p className="text-base leading-relaxed">
                   I'm also skilled in data analysis and visualization with tools such as Pandas, Matplotlib, Seaborn, and Power BI.
-                </p>
+                </p> */}
               </div>
             </CardContent>
           </Card>

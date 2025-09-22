@@ -179,6 +179,49 @@ const allProjects = [
 
   {
     type: "ml",
+    title: "Medical-Chatbot",
+    description: "Built an agentic AI medical assistant chatbot using LLaMA-3.1-8B (ChatGrok) and LangGraph, enabling advanced reasoning and dynamic tool selection. Designed a Retrieval-Augmented Generation (RAG) pipeline with FAISS and HuggingFace embeddings for accurate, context-aware responses from medical datasets. Implemented a scalable Streamlit interface with SQLite to store chat history for seamless multi-turn conversations.",
+    
+    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/Screenshot%202025-09-22%20071835.png",
+    liveUrl: "#",
+    githubUrl: "https://github.com/chandankr111/Medical-chatbot.git",
+    technologies: [
+      "Python",
+      "LLaMA-3.1-8B (ChatGroq)",
+      "LangChain",
+      "LangGraph",
+      "FAISS",
+      "HuggingFace Embeddings",
+      "Retrieval-Augmented Generation (RAG)",
+      "Streamlit",
+      "SQLite",
+     
+    ]
+    
+  },
+  
+  {
+    type: "ml",
+    title: "Image-Colorization",
+    description: "Designed and implemented a Conditional GAN framework with a U-Net generator and PatchGAN discriminator for grayscale-to-color face image translation. Optimized training with GAN and L1 losses to improve color realism and structural consistency, achieving stable convergence (Generator loss: 0.92, Discriminator loss: 0.63). Deployed a Streamlit app for real-time image colorization and interactive visualization.",
+  
+    image: "https://pub-c89890c107e04de0afc474300dbac3da.r2.dev/440319999-e589eec3-6151-4900-ae94-61f6eca859ae.png",
+    liveUrl: "#",
+    githubUrl: "https://github.com/chandankr111/Image-Colorization.git",
+  
+    technologies: [
+      "Python",
+      "PyTorch",
+       "GAN",
+      
+      "Streamlit",
+      "OpenCV",
+      "NumPy"
+    ]
+  },
+
+  {
+    type: "ml",
     title: "Crypto-Metrics-Analyzer",
     description: "Built a Bitcoin price prediction model using Gradient Boosting and other ML algorithms, achieving low MAE scores through advanced tuning, feature engineering, and data visualization.",
 
