@@ -23,7 +23,7 @@ const About = () => {
 
           {/* Download CV Button */}
           <a
-            href="/cv.pdf"
+            href="https://drive.google.com/file/d/1glyXPLEJMZwIEHPNY1Ho2he9n3EEJQhz/view?usp=drive_link"
             download
             className="inline-flex items-center gap-2 rounded-xl border border-border bg-muted px-4 py-2 text-sm font-semibold text-foreground shadow-sm transition hover:bg-primary hover:text-background"
           >
