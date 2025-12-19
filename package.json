@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+ 
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@next/swc-wasm-nodejs": "13.5.1",

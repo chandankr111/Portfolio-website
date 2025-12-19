@@ -20,10 +20,11 @@ const education = [
 ];
 
 const certifications = [
+  
   {
     title: "AWS Cloud Practitioner",
     issuer: "Amazon Web Services",
-    date: "2023"
+    date: "2024"
   },
   {
     title: "Full Stack Development and DevOps",
@@ -33,7 +34,7 @@ const certifications = [
   {
     title: "Python for Data Science",
     issuer: "IBM",
-    date: "2023"
+    date: "2025"
   }
 ];
 

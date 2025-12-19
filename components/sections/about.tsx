@@ -84,6 +84,26 @@ const About = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-3">Certifications</h3>
                 <div className="max-h-48 overflow-y-auto pr-2 space-y-4">
+                <div>
+                    <a href="https://learn.kodekloud.com/certificate/5c34c93f-df9f-4cba-8e0f-bf0a3e5dd94e" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                    Docker Training Course for the Absolute Beginner
+
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+                <div>
+                    <a href="https://learn.kodekloud.com/certificate/4e396aef-0e06-4913-bb73-112583def112" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                    Jenkins For Beginners
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+                <div>
+                    <a href="https://learn.kodekloud.com/certificate/74e23706-8f86-4105-bd73-af916d8e46bc" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                    DevOps Pre-Requisite Course
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+
                   <div>
                     <a href="https://www.credly.com/badges/58c356c8-e563-4b70-a876-09b22c05f1d9/linked_in_profile" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
                       AWS Cloud Practitioner
