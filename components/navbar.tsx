@@ -1,6 +1,6 @@
 "use client"
 
-import Link from 'next/link';
+import Link from 'next/link' ;
 import { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { useTheme } from 'next-themes';
