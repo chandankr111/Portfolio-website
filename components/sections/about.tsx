@@ -84,6 +84,87 @@ const About = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-3">Certifications</h3>
                 <div className="max-h-48 overflow-y-auto pr-2 space-y-4">
+                      
+                                 <div>
+                    <a href="https://engineer.kodekloud.com/certificate-verification/4d304e20-e5d5-4e14-a829-8ee8ca56c7e4" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                 KodeKloud Engineer - 100 Days of Cloud (AWS)
+
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+
+                      <div>
+                    <a href="https://learn.kodekloud.com/certificate/f754e2af-b465-4c92-8d7d-623dd3a6bbdd" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                 Istio Service Mesh
+
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+
+                 <div>
+                    <a href="https://learn.kodekloud.com/certificate/2ec81e74-3ac9-4638-a723-22ba9411a405" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                 Helm for Beginners
+
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+
+                   <div>
+                    <a href="https://engineer.kodekloud.com/certificate-verification/df63beb7-5b8e-4598-9b5b-42998056c55a" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                  KodeKloud Engineer - Kubernetes (Level 1)
+
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+
+                 <div>
+                    <a href="https://learn.kodekloud.com/certificate/3b1ccf00-3929-42a1-8148-27d03a14768b" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                  Terraform Basics Training Course
+
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+
+                       <div>
+                    <a href="https://engineer.kodekloud.com/certificate-verification/c56ccf99-f635-43c5-b6eb-3911e1390e20" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                   KodeKloud Engineer - Jenkins (Level 1)
+
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+
+                   <div>
+                    <a href="https://engineer.kodekloud.com/certificate-verification/c56ccf99-f635-43c5-b6eb-3911e1390e20" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                   KodeKloud Engineer - Jenkins (Level 1)
+
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+
+
+                   <div>
+                    <a href="https://engineer.kodekloud.com/certificate-verification/db5b9d1b-4661-4c08-ac06-a48662f7a5ec" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                    KodeKloud Engineer - Cloud (AWS) (Level 1)
+
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+
+                  <div>
+                    <a href="https://learn.kodekloud.com/certificate/571e5dee-7bee-4fdd-802a-dac0f9afb44a" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                    Kubernetes for the Absolute Beginners - Hands-on Tutorial
+
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
+
+                  <div>
+                    <a href="https://engineer.kodekloud.com/certificate-verification/a20c4e4c-2b7e-4f41-91a2-2eed730df2fc" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
+                    KodeKloud Engineer - Docker (Level 1)
+
+                    </a>
+                    <p className="text-sm text-muted-foreground">KodeKloud</p>
+                  </div>
                 <div>
                     <a href="https://learn.kodekloud.com/certificate/5c34c93f-df9f-4cba-8e0f-bf0a3e5dd94e" target="_blank" rel="noopener noreferrer" className="font-medium text-white hover:underline">
                     Docker Training Course for the Absolute Beginner
